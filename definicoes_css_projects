@@ -1,0 +1,14 @@
+body{
+    background-color: darkgray;
+}
+
+table a:hover{
+    color:darkolivegreen;
+}
+table a{
+    color:gold;
+}
+
+#linkindex a{
+    color: greenyellow;
+}

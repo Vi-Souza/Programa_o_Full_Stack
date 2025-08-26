@@ -1,4 +1,24 @@
-p{
+div p{
     color:red;
     font-size: 18pt;
+}
+
+body{
+    background-color:blue;
+}
+
+.teste{
+    background-color:green;
+}
+
+#teste{
+    background-color:aqua;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a{
+    color:purple;
 }
