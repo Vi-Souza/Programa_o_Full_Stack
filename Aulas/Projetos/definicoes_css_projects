@@ -9,6 +9,6 @@ table a{
     color:gold;
 }
 
-#linkindex a{
+#linkindex{
     color: greenyellow;
 }
