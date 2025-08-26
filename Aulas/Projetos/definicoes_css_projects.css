@@ -19,9 +19,6 @@ td, tr{
     border: 1px solid black;
     text-align: center;
 }
-th{
-    border: solid black;
-}
 
 #linkindex{
     color: greenyellow;
