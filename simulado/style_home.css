@@ -1,0 +1,64 @@
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 100px;
+  align-content: center;
+}
+
+nav a{
+  padding: 15px 20px;
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+} 
+
+.assine{
+  background-color: red;
+  color: white;
+  font-size: 17px;
+}
+
+.linha2 div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu p{
+  color: gray;
+}
+
+.menu a{
+  color: gray;
+  align-content: flex-end;
+  padding: 10px 15px;
+}
+
+.titulo{
+  display: flex;
+  font-size: 50px;
+  align-content: center;
+  justify-content: center;
+}
+
+div a{
+  text-decoration: none;
+}
+
+div a:hover {
+  text-decoration: underline;
+} 
+
+.titulo a{
+  color: red;
+}
