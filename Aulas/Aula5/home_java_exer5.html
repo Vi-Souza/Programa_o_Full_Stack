@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Este é um exemplo de Window Alert</h1>
+
+    <script type="text/javascript">
+        let a=1;
+        let entradaIdade=[];
+        let contIdadeMaior=-1;
+        let contIdadeMenor=1000;
+        let contSexo="";
+        let contSalario=0;
+        let contSalarioF=0;
+        let contVezes=0;
+        let mediaSalario=parseFloat(0);
+        
+
+        while (a===1){
+            entradaIdade.push(parseInt(prompt("Entre com a idade: ")));
+            if (entradaIdade[entradaIdade.length-1]<0){
+                a=0;
+            }
+            else{
+                contVezes++;
+                let entradaSexo=prompt("Entre com o sexo: ");
+                let entrada_sexo_string=String(entradaSexo);
+                let entradaSalario=prompt("Entre com salario: ");
+                let entrada_salario_float=parseFloat(entradaSalario);
+                if (entradaIdade[entradaIdade.length-1]>contIdadeMaior){
+                    contIdadeMaior=entradaIdade[entradaIdade.length-1];
+                    console.log("idade maior: "+ contIdadeMaior);
+                }
+                else if (entradaIdade[entradaIdade.length-1]<contIdadeMenor){
+                    contIdadeMenor=entradaIdade[entradaIdade.length-1];
+                    console.log("idade menor: "+ contIdadeMenor);
+                }
+                contSalario = contSalario+entrada_salario_float;
+                console.log("salario: "+ contSalario)
+
+                if (entrada_sexo_string==="F"){
+                    if (entrada_salario_float>5000){
+                        contSalarioF++;
+                        console.log("cont mulheres: " + contSalarioF);
+                    }
+                }  
+            }
+        }
+        mediaSalario=contSalario/contVezes;
+        console.log("Media do salario: "+ mediaSalario);
+        console.log("Maior idade: "+ contIdadeMaior);
+        console.log("Menor idade: "+ contIdadeMenor);
+        console.log("Quantidade de mulheres: " + contSalarioF);
+    </script>
+
+</body>
+</html>
